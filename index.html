@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Para Você</title>
+
+    <!--
+  ============================================================
+  COMO PERSONALIZAR ESTE SITE (leia antes de enviar!)
+  ============================================================
+  1. Abra js/config.js — é o único arquivo que você precisa editar.
+     Troque os nomes, a data em que vocês ficaram juntos, o texto da
+     carta e os motivos que você ama nela.
+  2. Para trocar as fotos: coloque os arquivos dentro de assets/fotos/
+     e troque cada `{ placeholder: true }` da lista `photos` em
+     js/config.js por `{ img: "assets/fotos/arquivo.jpg", alt: "descrição" }`.
+  3. Pronto! Só abrir o arquivo .html no navegador (duplo clique) já funciona.
+  ============================================================
+-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="petals" id="petals"></div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-eyebrow">um cantinho só nosso</div>
+      <h1 class="hero-names" id="heroNames">
+        Meu Amor
+        <span class="amp">&amp;</span>
+        Eu
+      </h1>
+      <div class="counter-wrap" id="counterWrap"></div>
+      <div class="counter-since" id="counterSince"></div>
+      <div class="scroll-hint">
+        <span>role para ver mais</span><span class="arrow">↓</span>
+      </div>
+    </section>
+
+    <!-- CARTA -->
+    <section class="letter-section">
+      <h2 class="env-title display">Uma cartinha pra você</h2>
+      <p class="env-sub">Clique no envelope para abrir.</p>
+
+      <div>
+        <div class="envelope" id="envelope">
+          <div class="flap"></div>
+          <div class="seal">♡</div>
+          <div class="letter-paper"></div>
+          <div class="body"></div>
+        </div>
+        <div class="tap-hint">toque para abrir</div>
+      </div>
+
+      <div class="letter-full" id="letterFull"></div>
+    </section>
+
+    <!-- MOTIVOS -->
+    <section class="reasons-section">
+      <h2 class="reasons-title display">Motivos que eu te amo</h2>
+      <p class="reasons-sub">Toque em cada cartão para virar.</p>
+      <div class="reasons-grid" id="reasonsGrid"></div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="gallery-section">
+      <h2 class="gal-title display">Nossos momentos</h2>
+      <p class="gal-sub">Alguns instantes que eu guardo com carinho.</p>
+      <div class="marquee" id="marquee">
+        <div class="marquee-row">
+          <div class="marquee-track" id="track1"></div>
+        </div>
+        <div class="marquee-row reverse">
+          <div class="marquee-track" id="track2"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="footer">
+      <div class="heart">♡</div>
+      <p>feito com carinho, só pra você</p>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox-overlay" id="lightboxOverlay">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">✕</button>
+      <button class="lightbox-prev" id="lightboxPrev" aria-label="Foto anterior">‹</button>
+      <figure class="lightbox-figure">
+        <img id="lightboxImg" src="" alt="" />
+        <figcaption class="lightbox-caption" id="lightboxCaption"></figcaption>
+      </figure>
+      <button class="lightbox-next" id="lightboxNext" aria-label="Próxima foto">›</button>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
