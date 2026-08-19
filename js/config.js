@@ -2,15 +2,15 @@
    CONFIGURAÇÃO — edite só este arquivo!
    ============================================================ */
 const CONFIG = {
-  yourName: "Eu",
-  herName: "Meu Amor",
+  yourName: "Bruno",
+  herName: "Valentina",
   // Momento exato em que o namoro começou (ano, mês-1, dia, hora, minuto)
   // Pedido em namoro: 17/08/2026 às 17:55
   startDate: new Date(2026, 7, 17, 17, 55, 0),
 
   letter: [
     "Oi, meu amor.",
-    "Ainda estou meio bobo de felicidade desde ontem, às 17:55, quando você disse sim. Fiz esse site pra guardar esse momento e pra você poder ver, em tempo real, cada segundo que a gente já está namorando.",
+    "Ainda estou meio bobo de felicidade desde ontem, quando você disse sim. Fiz esse site pra guardar alguns momentos e pra você poder ver, em tempo real, cada segundo que eu estou ao seu lado.",
     "Foi só o começo, mas eu já sei que quero contar cada um desses dias, semanas e anos do seu lado.",
     "Obrigado por dizer sim. Te amo mais do que qualquer contador consegue mostrar.",
   ],
@@ -19,9 +19,9 @@ const CONFIG = {
   // Motivos: cada string vira um cartão que ela pode virar/clicar.
   // Adicione, remova ou edite à vontade.
   reasons: [
-    "Pelo jeito que você sorri antes mesmo de terminar a piada.",
+    "Pelo jeito que você sorri.",
     "Por me deixar mais calmo só de estar perto de você.",
-    "Pela forma como você se importa com todo mundo ao seu redor.",
+    "Pela forma como você se importa comigo.",
     "Porque com você até os dias difíceis ficam mais leves.",
     "Pela sua coragem de dizer sim e começar essa história comigo.",
     "Por cada mensagem boba que vira o meu dia.",

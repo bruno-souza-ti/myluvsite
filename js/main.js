@@ -127,18 +127,13 @@ function photoSlotHTML(p, globalIndex) {
   return `<div class="photo-slot has-photo" data-idx="${globalIndex}"><img src="${p.img}" alt="${p.alt || ""}"></div>`;
 }
 
-const half = Math.ceil(CONFIG.photos.length / 2);
-const row1Photos = CONFIG.photos.slice(0, half);
-const row2Photos = CONFIG.photos.slice(half);
-
 function fillTrack(elId, photos, offset) {
   const el = document.getElementById(elId);
   const html = photos.map((p, i) => photoSlotHTML(p, i + offset)).join("");
   // duplica o conteúdo para o loop infinito ficar contínuo
   el.innerHTML = html + html;
 }
-fillTrack("track1", row1Photos, 0);
-fillTrack("track2", row2Photos, half);
+fillTrack("track", CONFIG.photos, 0);
 
 // lightbox — abre a foto clicada e permite navegar entre todas as fotos reais
 const lightboxOverlay = document.getElementById("lightboxOverlay");
